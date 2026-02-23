@@ -18,6 +18,23 @@ public class Juguete extends Producto{
 		this.tipoJuguete = tipoJuguete;
 		this.garantia = garantia;
 	}
+	
+	
+
+	public Juguete(String marca, float precio, int idProducto, String nombre, String color, String tipoJuguete,
+			String garantia) {
+		super(marca, precio, idProducto);
+		this.nombre = nombre;
+		this.color = color;
+		this.tipoJuguete = tipoJuguete;
+		this.garantia = garantia;
+	}
+	
+
+	public Juguete(String marca, float precio, int idProducto) {
+		super(marca, precio, idProducto);
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -53,8 +70,8 @@ public class Juguete extends Producto{
 
 	@Override
 	public String toString() {
-		return super.toString() + "==Juguete== \nNombre: " + nombre + "\nColor:" + color + "\nTipo Juguete:" + tipoJuguete + "\nGarantia:"
-				+ garantia ;
+		return super.toString() + "==Juguete== \nNombre: " + nombre + "\nColor: " + color + "\nTipo Juguete: " + tipoJuguete + "\nGarantia: "
+				+ garantia  + "-----------------";
 	}
 	
 	
